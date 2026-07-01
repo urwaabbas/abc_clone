@@ -1,0 +1,130 @@
+.services-section {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-title {
+  font-size: 42px;
+  color: #222222;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 13px;
+  color: #888888;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.services-blueline {
+  width: 32px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+.services-columns-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.service-feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.service-image-ring {
+  width: 96px;
+  height: 96px;
+  border: 2px solid #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.service-image-ring img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.service-feature-card:hover .service-image-ring {
+  transform: translateY(-4px);
+  background-color: rgba(37, 99, 235, 0.02);
+}
+.service-feature-title {
+  font-size: 18px;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.service-feature-description {
+  font-size: 14.5px;
+  color: #8c8c8c;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 260px;
+}
+
+.img-container {
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+#bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.65);
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff !important;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  width: 90%;
+  pointer-events: none;
+}

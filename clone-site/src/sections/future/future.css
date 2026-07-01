@@ -1,0 +1,158 @@
+.future {
+  padding: 80px 40px;
+  background: #f9f9f9;
+}
+
+.future-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.future-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.future-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.future-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.future-points {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.future-point {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.future-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.future-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.plus {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.future-collapse {
+  transition: max-height 0.4s ease;
+}
+
+.future-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.future-image {
+  flex: 1;
+  text-align: center;
+}
+
+.future-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #111; /* dark background */
+  padding: 60px 40px;
+  color: #fff;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-text h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.contact-text p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #007bff; /* bright blue */
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}

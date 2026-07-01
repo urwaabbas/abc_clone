@@ -1,0 +1,73 @@
+.info-section {
+  width: 100%;
+}
+
+.info-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-overlay {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.info-overlay h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info-overlay p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.info-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.info-details {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+}
+
+.info-box {
+  flex: 1;
+  text-align: center;
+}
+
+.info-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #aaa;
+}

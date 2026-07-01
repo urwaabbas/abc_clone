@@ -1,0 +1,97 @@
+/* Container */
+.main-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+}
+
+/* Each case block */
+.brand-div,
+.content-div,
+.ecom-div {
+  flex: 1 1 300px;
+  max-width: 320px;
+  margin: 20px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.brand-div:hover,
+.content-div:hover,
+.ecom-div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Images */
+#first-img,
+#second-img,
+#third-img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Titles */
+.title-brand-div,
+.title-content-div,
+.title-tech-div {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Descriptions */
+.description-first-div,
+.description-second-div,
+.description-third-div {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #666;
+  padding: 0 10px;
+}
+
+/* Header container */
+.cases-header {
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+/* Title */
+.cases-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Subtitle */
+.cases-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Decorative blue line */
+.blue-line {
+  width: 60px;
+  height: 3px;
+  background-color: #007bff; /* bright blue */
+  margin: 0 auto;
+  border-radius: 2px;
+}
