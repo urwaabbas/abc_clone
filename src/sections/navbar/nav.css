@@ -100,7 +100,7 @@ button.navlinks:hover {
   background-color: #1d4ed8;
 }
 
-/* 📱 Responsive Breakpoints */
+
 @media (max-width: 992px) {
   .side_by_side_top_card {
     flex-direction: column;

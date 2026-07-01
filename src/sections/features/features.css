@@ -188,7 +188,7 @@
   60% { transform: rotate(45deg) translateY(-5px); }
 }
 
-/* 📱 Responsive Breakpoints */
+
 @media (max-width: 992px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
