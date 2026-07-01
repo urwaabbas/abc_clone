@@ -27,7 +27,8 @@ const Future = () => {
         <div className="future-text">
           <h2>Building the Future</h2>
           <p>
-            We are committed to creating innovative solutions that shape tomorrow.
+            We are committed to creating innovative solutions that shape
+            tomorrow.
           </p>
 
           <div className="future-points">
@@ -40,7 +41,9 @@ const Future = () => {
                   className="future-header"
                   onClick={() => togglePoint(index)}
                 >
-                  <span className="plus">{openIndex === index ? "-" : "+"}</span>
+                  <span className="plus">
+                    {openIndex === index ? "-" : "+"}
+                  </span>
                   <h4>{item.title}</h4>
                 </div>
                 <div
@@ -57,7 +60,6 @@ const Future = () => {
           </div>
         </div>
 
-        {/* Right Side */}
         <div className="future-image">
           <img src={futureImg} alt="Future Vision" />
         </div>
