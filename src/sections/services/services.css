@@ -5,8 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -67,9 +66,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .service-image-ring img {
@@ -82,6 +79,7 @@
   transform: translateY(-4px);
   background-color: rgba(37, 99, 235, 0.02);
 }
+
 .service-feature-title {
   font-size: 18px;
   color: #2c2c2c;
@@ -127,4 +125,36 @@
   margin: 0;
   width: 90%;
   pointer-events: none;
+}
+
+/* 📱 Responsive Breakpoints */
+@media (max-width: 992px) {
+  .services-columns-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+  .header-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-columns-container {
+    grid-template-columns: 1fr; /* stack vertically on mobile */
+  }
+  .header-title {
+    font-size: 26px;
+  }
+  .service-feature-title {
+    font-size: 16px;
+  }
+  .service-feature-description {
+    font-size: 13px;
+    max-width: 100%;
+  }
+  .img-container {
+    height: 250px; /* shrink background image for mobile */
+  }
+  .title-container {
+    font-size: 1.5rem;
+  }
 }

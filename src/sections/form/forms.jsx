@@ -1,6 +1,7 @@
 const ContactForm = () => {
   return (
-    <div className="contact-section">
+    
+    <div id="contact" className="contact-section">
       <div className="contact-text">
         <h2>Have some questions</h2>
         <p>MESSAGE US</p>

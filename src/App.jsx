@@ -10,7 +10,7 @@ import Future from "./sections/future/future";
 import ContactForm from "./sections/form/forms";
 import InfoSection from "./sections/information/information";
 import Footer from "./sections/footer/footer";
-
+import "./index.css"
 function App() {
   return (
     <>

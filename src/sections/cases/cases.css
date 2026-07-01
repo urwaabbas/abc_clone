@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
   padding: 60px 40px;
   background-color: #f9f9f9;
 }
@@ -20,9 +20,7 @@
   border-radius: 8px;
   padding: 30px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .brand-div:hover,
@@ -67,7 +65,6 @@
 .cases-header {
   background-color: #fff;
   text-align: center;
-  
 }
 
 /* Title */
@@ -94,4 +91,36 @@
   background-color: #007bff; /* bright blue */
   margin: 0 auto;
   border-radius: 2px;
+}
+
+/* ✅ Responsive tweaks */
+@media (max-width: 992px) {
+  .main-div {
+    justify-content: center;
+  }
+  .brand-div,
+  .content-div,
+  .ecom-div {
+    flex: 1 1 45%; /* two per row on tablets */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-div,
+  .content-div,
+  .ecom-div {
+    flex: 1 1 100%; /* stack vertically on mobile */
+    margin: 15px 0;
+  }
+  .title-brand-div,
+  .title-content-div,
+  .title-tech-div {
+    font-size: 18px;
+  }
+  .description-first-div,
+  .description-second-div,
+  .description-third-div {
+    font-size: 14px;
+  }
 }

@@ -12,6 +12,7 @@ import "./features.css";
 const Features = () => {
   return (
     <>
+    <section id="features"></section>
       {/* Other Features Section */}
       <div className="features-section">
         <div className="features-header">
@@ -77,6 +78,8 @@ const Features = () => {
           <span></span>
         </div>
       </section>
+      
+
     </>
   );
 };

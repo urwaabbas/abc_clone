@@ -9,6 +9,7 @@ const Cases = () => {
 
   return (
     <>
+    <section id="cases"></section>
     <div className="cases-header">
       <h2 className="cases-title">Our Cases</h2>
       <p className="cases-subtitle">Solutions</p>
