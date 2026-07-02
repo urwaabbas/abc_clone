@@ -6,13 +6,19 @@
 /* Top bar */
 .side_by_side_top_card {
   background-color: #f6f6f6;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px 60px;
   font-size: 13px;
   color: #666666;
   border-bottom: 1px solid #eaeaea;
+  box-sizing: border-box;
+}
+
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .top_nav_card {
@@ -44,10 +50,16 @@
 /* Main nav */
 .menu-attached-with-content {
   background-color: #ffffff;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.nav-inner {
   display: flex;
   justify-content: space-between; /* instead of fixed gap */
   align-items: center;
-  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #logo {

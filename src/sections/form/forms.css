@@ -1,14 +1,26 @@
 .contact-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #111; /* dark background */
+  background-color: #111; /* dark background, full width */
   padding: 60px 40px;
   color: #fff;
+  box-sizing: border-box;
+  min-height: 100vh;        /* full viewport height */
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: center;  /* keep text + form together */
+  align-items: center;      /* align vertically */
+  gap: 60px;                /* spacing between text and form */
+  max-width: 1200px;
+  width: 100%;
 }
 
 .contact-text {
-  flex: 1;
+  flex: 0 1 400px;          /* fixed width */
+  text-align: center;       /* center text */
 }
 
 .contact-text h2 {
@@ -26,8 +38,7 @@
 }
 
 .contact-form {
-  flex: 1;
-  max-width: 400px;
+  flex: 0 1 400px;          /* fixed width for form */
 }
 
 .contact-form form {
@@ -71,4 +82,19 @@
 
 .contact-form button:hover {
   background-color: #0056b3; /* darker blue on hover */
+}
+
+/* 📱 Mobile responsive: stack text above form */
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-text,
+  .contact-form {
+    flex: 1 1 auto;
+    max-width: 100%;
+    text-align: center;
+  }
 }

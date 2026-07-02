@@ -1,15 +1,18 @@
 .future {
   padding: 80px 40px;
   background: #f9f9f9;
-}
 
+}
 .future-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center; /* instead of space-between */
   gap: 40px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 .future-text {
   flex: 1;
@@ -72,10 +75,12 @@
   line-height: 1.5;
 }
 
+.future-text,
 .future-image {
   flex: 1;
-  text-align: center;
+  min-width: 300px; /* prevents collapsing too much */
 }
+
 
 .future-image img {
   max-width: 100%;
